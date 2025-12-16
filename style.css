@@ -377,7 +377,25 @@
             display: flex;
             gap: 30px;
             z-index: 100;
+			display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
         }
+		.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px; 
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
         
         .header-nav a {
             color: white;
@@ -398,19 +416,19 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        /* Анимация для якорных ссылок */
+       
         html {
             scroll-behavior: smooth;
         }
         
-        /* Стили для заголовка */
+        
         .header-content {
             padding-top: 40px;
         }
         
-        /* Стили для футера */
+        
         .footer-links {
-            display: none; /* Скрываем старые ссылки в футере */
+            display: none; 
         }
         
         .footer-links:empty {
