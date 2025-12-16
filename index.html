@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сибиряков Ярослав - Портфолио разработчика</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="header-nav">
+                <a href="#portfolio">Портфолио</a>
+                <a href="#services">Услуги</a>
+                <a href="#order">Заявка</a>
+            </nav>
+            
+            <div class="header-content">
+                <h1 class="logo">Сибиряков <span>Ярослав</span></h1>
+                <p class="tagline">Мое портфолио</p>
+                <h2 class="tagline">Решение всех ваших кодинг-проблем в одном месте</h2>
+            </div>
+        </div>
+    </header>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Часть моих работ</h2>
+            </div>
+            
+            <div class="works-grid">
+                <div class="work-card">
+                    <div class="work-image">
+                        <a href="img/ff.jpg" target="_blank" rel="noopener noreferrer">
+                            <img src="img/ff.jpg" alt="Сайт 1 работа" class="thumbnail">
+                        </a>
+                    </div>
+                    <div class="work-content">
+                        <a href="https://xoipheno.github.io/site808/" target="_blank" 
+                           rel="noopener noreferrer" class="work-link">
+                            <h3>Сайт визитка</h3>
+                        </a>
+                        <p class="work-description">Современный сайт с адаптивным дизайном</p>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-image">
+                        <a href="img/ff2.jpg" target="_blank" rel="noopener noreferrer">
+                            <img src="img/ff2.jpg" alt="Сайт 2 работа" class="thumbnail">
+                        </a>
+                    </div>
+                    <div class="work-content">
+                        <a href="https://xoipheno.github.io/siteofbee100/#" target="_blank" 
+                           rel="noopener noreferrer" class="work-link">
+                            <h3>Пчелиный сайт</h3>
+                        </a>
+                        <p class="work-description">Корпоративный сайт с интерактивными элементами</p>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-image">
+                        <a href="img/ff3.jpg" target="_blank" rel="noopener noreferrer">
+                            <img src="img/ff3.jpg" alt="Сайт 3 пример" class="thumbnail">
+                        </a>
+                    </div>
+                    <div class="work-content">
+                        <a href="https://xoipheno.github.io/momday/" target="_blank" 
+                           rel="noopener noreferrer" class="work-link">
+                            <h3>Сайт ко дню матери</h3>
+                        </a>
+                        <p class="work-description">Статичный сайт - открытка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мои услуги</h2>
+            </div>
+            
+            <div class="works-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Разработка сайтов</h3>
+                    <p>Напишем ваш сайт с нуля под заказ. Современные технологии, адаптивный дизайн, индивидуальный подход.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Мобильные приложения</h3>
+                    <p>Разработка кроссплатформенных мобильных приложений для iOS и Android. Нативные и гибридные решения.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Техническая поддержка</h3>
+                    <p>Обслуживание и поддержка ваших IT-проектов. Оптимизация, доработка, исправление ошибок.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Оставьте заявку</h2>
+            </div>
+            
+            <div class="order-form">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Введите ваше имя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" class="form-control" placeholder="example@mail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project">Тип проекта:</label>
+                        <select id="project" class="form-control" required>
+                            <option value="" disabled selected>Выберите тип проекта</option>
+                            <option value="website">Веб-сайт</option>
+                            <option value="app">Мобильное приложение</option>
+                            <option value="support">Техническая поддержка</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Описание проекта:</label>
+                        <textarea id="description" class="form-control" placeholder="Подробно опишите ваш проект, требования и сроки..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent btn-block">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Сибиряков Ярослав &copy; <span id="currentYear"></span>. Все права защищены.</p>
+            <p class="copyright">Решение всех ваших кодинг-проблем в одном месте</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const project = document.getElementById('project').value;
+            
+            alert(`Спасибо, ${name}! Ваша заявка на "${project}" принята. Мы свяжемся с вами по адресу ${email} в ближайшее время.`);
+            
+            this.reset();
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                
+                if (href === '#' || this.getAttribute('target') === '_blank') {
+                    return;
+                }
+                
+                e.preventDefault();
+                
+                const targetId = href;
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        window.addEventListener('load', function() {
+            const header = document.querySelector('header');
+            const firstSection = document.querySelector('.section');
+            
+            if (header && firstSection) {
+                firstSection.style.scrollMarginTop = header.offsetHeight + 'px';
+                
+                document.querySelectorAll('section[id]').forEach(section => {
+                    section.style.scrollMarginTop = header.offsetHeight + 'px';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
